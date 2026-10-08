@@ -52,6 +52,7 @@ def main():
     )
 
     print(f"Accuracy: {acc:.4f}")
+    print("Classification Report:")
     print(report)
 
     joblib.dump(model, "models/iris_model.joblib")
